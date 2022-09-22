@@ -6,7 +6,7 @@
 #include "employee.h"
 
 
-char* get_binary_data_for_creator(char* binary, int n) {
+char* get_binary_data_for_creator(char* binary, int n)  {
 	char data[200] = "Creator.exe ";
 	strcat(data, binary);
 	strcat(data, " ");
