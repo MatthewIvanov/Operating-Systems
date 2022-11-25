@@ -6,7 +6,7 @@ struct Node {
 	int n;
 	vector <int> vec;
 };
-DWORD WINAPI min_max(LPVOID node) {
+DWORD  WINAPI min_max(LPVOID node) {
 	Node* obj = (Node*)node;
 	int max = INT_MIN; int min = INT_MAX;
 	for (size_t i = 0; i < obj->n ; i++){
@@ -57,7 +57,7 @@ int main(){
 	cin >> n; 
 	node.n = n;
 	cout << "List of elements: ";
-	for (size_t i = 0; i < n; i++){
+	for (size_t i = 0; i < n; i++) { 
 		int x;
 		cin >> x;
 		node.vec.push_back(x);
