@@ -10,7 +10,7 @@ std::vector<HANDLE> thEvents;
 CRITICAL_SECTION CriticalS;
 const int &timeMs = 5;
 
-UINT WINAPI marker(void* p) {
+UINT  WINAPI marker(void* p) {
     threadArgs* p_ = static_cast<threadArgs*>(p);
     WaitForSingleObject(threadStartEv, INFINITE);
     std::cout << "Start " << p_->num << " thread.";
