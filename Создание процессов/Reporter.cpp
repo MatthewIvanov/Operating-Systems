@@ -1,0 +1,48 @@
+include windows.h
+#include iostream
+#include fstream
+#include list
+#include employee.h
+
+#pragma warning(disable  4996)
+
+C4996 is generated for the line on which the function is declaredand for the line on which the function is used.
+Some CRT functions have been deprecated in favor of new, more secure functions.
+
+
+listEmployee readEmployees(char fileName) {
+	ifstream in;
+	in.open(fileName, iosbinary);
+	listEmployee employees;
+
+	while (EOF != n.peek())
+	{
+		Employee employee;
+		in.read((char)&employee, sizeof(Employee));
+		employees.push_back(employee);
+	}
+
+	in.close();
+
+	return employees;
+}
+
+bool employeeComparator(const Employee & employee1, const Employee & employee2) {
+	return employee1.num  employee2.num;
+}
+
+int main(int argc, char argv[]) {
+	ofstream out;
+	out.open(argv[2]);
+	double pay = atof(argv[3]);
+
+	listEmployee employees = readEmployees(argv[1]);
+	employees.sort(employeeComparator);
+
+	out  Data    argv[0]  n;
+	for (auto const& iterator employees) {
+		out  iterator.num  t  iterator.name  t  iterator.hours  pay  n;
+	}
+	out.close();
+	return 0;
+}
