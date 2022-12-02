@@ -5,9 +5,7 @@
 #include <windows.h>
 #include "employee.h"
 #pragma warning(disable: 4996)
-//C4996 is generated for the line on which the function is declared and for the line on which the function is used.
-//Some CRT functions have been deprecated in favor of new, more secure functions. 
-//создание файла
+
 char* get_binary_data_for_creator(char* binary, int n) {
 	char data[200] = "Creator.exe ";
 	strcat(data, binary);
@@ -15,7 +13,7 @@ char* get_binary_data_for_creator(char* binary, int n) {
 	strcat(data, to_string(n).c_str());
 	return data;
 }
-//создание процесса
+
 void runCreatorProcess(char data[]) {
 	STARTUPINFO si;
 	PROCESS_INFORMATION piApp;
@@ -34,7 +32,7 @@ void runCreatorProcess(char data[]) {
 
 }
 
-//чтение из бинарного файла
+
 void readFile(char* fileName) {
 	ifstream in;
 	in.open(fileName, ios::binary);
@@ -47,7 +45,6 @@ void readFile(char* fileName) {
 	in.close();
 }
 
-//получение данных для репортера
 char* get_binary_data_for_reporter(char* binaryFile, char* fileName, int pay) {
 	char data[100] = "Reporter.exe ";
 	strcat(data, binaryFile);
@@ -57,7 +54,7 @@ char* get_binary_data_for_reporter(char* binaryFile, char* fileName, int pay) {
 	strcat(data, to_string(pay).c_str());
 	return data;
 }
-//запуск процесса-обработика функции репортера
+
 void runReporterProcess(char dataForReporter[]) {
 	STARTUPINFO si;
 	PROCESS_INFORMATION piApp;
