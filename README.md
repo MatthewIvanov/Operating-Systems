@@ -1,4 +1,4 @@
-# Operating-SystemsOperating-Systems
+# Operating-Systems
 BSU-FAMCS Operating-Systems Labs
 
 Создание процессов: CreatingProcesses.
