@@ -8,5 +8,4 @@ BSU-FAMCS Operating-Systems Labs
 3.Cинхронизация потоков: ThreadSynchronization
 
 4.Синхронизация процессов: ProcessSynchronization.
-
 5.Обмен данными по именованным каналам.
