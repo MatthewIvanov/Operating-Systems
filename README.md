@@ -10,4 +10,5 @@ BSU-FAMCS Operating-Systems Labs
 4.Синхронизация процессов: ProcessSynchronization.
 </p>5.Обмен данными по именованным каналам.
 
+
 6.lab_boost
